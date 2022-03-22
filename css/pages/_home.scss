@@ -1,0 +1,552 @@
+    body{
+    background-image: url(./img/rectangle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+    display: block;
+    height: 80vh;
+}
+
+header{
+   
+
+   .container{
+        @include flex(row, space-between, center);
+  .logo{
+
+        img{
+            margin: 20px 50px;
+           
+        }
+    }
+        ul{
+            @include flex(row, space-between, center);
+
+            li a{
+                display: block;
+                padding: 15px 20px;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #fff;
+                &:hover{
+                    color: $color_1;
+                }
+            }
+        }
+    }
+}
+.hero{
+    color: #fff;   
+    margin: 200px 150px;
+    .text-title{
+        margin-bottom: 50px;
+        text-align: center;
+       margin-left: -50px;
+        span{
+            color: $color_1;
+        }
+    }
+    h1{
+        font-size: 48px;
+        font-weight: bold;
+    }
+    p{
+        color: #fff;
+    }
+   
+    .btn{
+        text-align: center;
+        align-items: center;
+        border: 2px solid $color_1;
+        font-size: 22px;
+        font-family: sans-serif;
+        font-weight: bold;
+       margin-left: 450px;
+        padding: 15px;
+        color: $color_1;
+    }
+    .strelka{
+        margin: 300px  0;
+        display: inline-block;
+        margin-left: -100px;
+        position: absolute;
+    }
+}
+
+.whan{
+    position: relative;
+    .recevie{
+        margin-top: 460px;
+       margin-left: 50px;
+        text-align: center;
+        h1{
+            margin-bottom: 20px;
+        }
+        span {
+            border-left-width: 200px;
+            width: 100px;
+        
+        p{
+            margin-top:20px ;
+            color: $color_2;
+        }
+    }
+        span{
+            color: $color_1;
+        }
+    }
+    .icons{
+    @include flex(row, space-between, center);
+    margin: 30px 20px;
+    text-align: center;
+        .img-icon{
+            padding: 20px 20px;
+          h1{
+              margin: 20px 0;
+          }
+        }
+    }
+    .strelka{
+        margin: 20px 600px;
+ 
+    }
+}
+
+.slides{
+    background-image: url(./img/Слой.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .slide{
+        border: 10px solid rgba(236, 236, 238, 0.308);
+        width: 80%;
+        height: 80vh;
+        margin: 0 100px;
+        margin-bottom: 50px;
+        margin-top: 100px;
+        padding-top: 150px;
+        h1{
+            margin-bottom: 50px;
+            font-size: 40px;
+            color: #fff;
+        }
+        span{
+            color: $color_1;
+        }
+        a{
+   
+            border: 2px solid $color_1;
+            font-size: 30px;
+            width: 300px;
+            margin-top: 50px;
+            padding: 15px;
+            color: $color_1;
+        }
+    }
+    .strelka{
+        margin: 20px -100px ;
+    }
+}
+.process{
+    text-align: center;
+    position: relative;
+    .our-text{
+        margin: 20px 0;
+        p{
+        padding-top: 20px;
+        font-size: 22px;
+        color: $color_2;
+        }
+    }
+    .lines{
+        margin-top: 50px;
+    }
+    .step-title{
+       color: #000;
+       position: absolute;
+       margin: 0 -130px;
+       p{
+        color: $color_2;
+       }
+      
+        span{
+            color: $color_1;
+        }
+   
+    .step{
+        
+        margin-top: -420px ;
+        margin-left: 300px;
+       width: 120px;
+       position: relative;
+       img{
+           width: 30px;
+           margin-left: -85px;
+           margin-top: 10px;
+           display: inline-block;
+           position: absolute;
+       }
+    }
+    .step1{
+        margin-top: -60px ;
+        margin-left: 580px;
+       width: 120px;
+       position: relative;
+       img{
+        width: 30px;
+        margin-left: -105px;
+        margin-top: 14px;
+        display: inline-block;
+        position: absolute;
+    }
+    }
+    .step2{
+        margin-top: -250px ;
+        margin-left: 660px;
+       width: 120px;
+       position: relative;
+       img{
+        width: 30px;
+        margin-left: -98px;
+        margin-top: 14px;
+        display: inline-block;
+        position: absolute;
+    }
+    }
+    .step3{
+        margin-top:0 ;
+        margin-left: 850px;
+       width: 180px;
+       position: relative;
+       img{
+        width: 30px;
+        margin-left: -150px;
+        margin-top: 10px;
+        display: inline-block;
+        position: absolute;
+    }
+    .image{
+        width: 30px;
+        margin-left: -23px;
+        margin-top: 135px;
+        display: inline-block;
+        position: absolute;
+    }
+    }
+}
+.strelka{
+    margin: 20px 500px;
+}
+}
+
+.notbok{
+    background-color: rgb(236, 236, 238) ;
+    .do{
+        text-align: center;
+        padding-top: 30px;
+        span{
+            color: $color_1;
+        }
+    }
+    .bok-block{
+        @include flex(row, space-between, center);
+        margin-top: 50px;
+
+   
+    .pages{
+        width: 300px;
+        height: 60vh;
+        position: relative;
+        margin-top: 80px;
+        h1{
+       font-size: 30px;
+       border-left: 5px solid $color_1;
+       padding:0 20px ;
+       margin: 0 10px; 
+    }
+       p{
+      padding: 10px ;
+      margin-bottom: 30px;
+      font-family: sans-serif;
+      color: $color_2;
+    }
+        .btn{
+            text-align: center;
+            align-items: center;
+            border: 2px solid $color_1;
+            background-color: $color_1;
+            font-size: 22px;
+            font-family: sans-serif;
+            font-weight: bold;
+            margin: 30px 10px;
+            padding: 15px;
+            color: #fff;
+            
+        }
+  .bok-img{
+      img{
+          position: absolute;
+      margin-bottom: 300px;
+    }
+    }
+
+    }
+}
+.strelka{
+    margin: 0 530px;
+    padding-bottom: 30px;
+}
+}
+
+
+.adver{
+    .adver-block{
+        @include flex(row, space-between, center);
+        position: relative;
+    }
+   
+    margin: 100px 0;
+    .adver-text{
+        text-align: right;
+       width: 300px;
+       h1{
+border-right: 5px solid $color_1;
+padding: 0 10px;
+text-transform: uppercase;
+}
+        p{
+            color: $color_2;
+            margin: 20px 0;
+        }
+        .more{
+                text-align: center;
+            align-items: center;
+            border: 2px solid $color_1;
+            background-color: $color_1;
+            font-size: 22px;
+            font-family: sans-serif;
+            font-weight: bold;
+           
+            padding: 15px;
+            color: #fff;            
+            }
+         
+       
+    }
+    .strelka{
+        position: absolute;
+        margin: 80px 530px;
+       margin-top: 50px;
+    }
+}
+.market{
+    background-color: $color_3;
+    height: 100vh;
+    align-items: center;
+    padding: 50px 200px;
+    .container{
+       
+      
+      
+        .market-text{
+            margin: 100px 0;
+            margin-left: 50px;
+            @include flex( row, space-between, center);
+            h1{
+                font-size: 30px;
+            }
+            p{
+            color: $color_2;
+            margin: 30px 0;
+            width: 450px;
+            }
+            a{
+               
+                text-align: center;
+            align-items: center;
+            border: 2px solid $color_1;
+            background-color: $color_1;
+            font-size: 22px;
+            font-family: sans-serif;
+            font-weight: bold;
+           
+            padding: 15px;
+            color: #fff;          
+            }
+        }
+  
+    .strelka{
+        margin:-50px 450px;
+    }
+}
+}
+   
+.port{
+    .container{
+        .portfolio{
+            
+            h1{
+                color: $color_2;
+                text-align: center;
+                margin: 20px 0;
+            }
+            .all{
+                color: $color_1;
+                text-align: center;
+                .tepa{
+                    width: 90%;
+                  margin-left: 50px;
+                }
+                h2{
+                    margin: 20px 0;
+                
+                    
+                span{
+                    
+                    margin: 0  35px;
+                }
+            }
+              
+                
+                }
+                .past{
+                    width: 90%;
+                    margin-left: 50px;
+                }
+         
+         
+            .rasm{
+               margin: 50px 0;
+               padding: 10px;
+               margin-left: 70px;
+            
+               
+            }
+
+            .land{
+                border: 2px solid $color_1;
+                background-color: $color_1;
+                font-size: 22px;
+                font-family: sans-serif;
+                font-weight: bold;
+                padding: 15px;
+                color: #fff;   
+                margin:0 400px;  
+               }
+              
+            }
+           
+        }
+        .strelka{
+            margin:50px 530px;
+        }
+        
+    }
+
+    .our{
+        background-color: rgb(236, 236, 238);
+       
+        .team{
+        text-align: center;
+        border-bottom: 1px solid red;
+        width: 15%;
+        margin: 50px 450px;
+       padding-top: 20px;
+        }
+        h1{  
+            margin: 00;        
+        span{
+            color: $color_1;
+        }
+    }
+        .tom-blocks{
+            @include flex(row, space-between, center);
+
+                span{
+                color: $color_1;
+                }
+            p{
+                text-align: center;
+                margin: 10px 0;
+            }
+            .icon{
+               margin:0 5px;
+                img{
+                    padding-left: 10px;
+                }
+            }
+           
+        }
+        .strelka{
+            margin:80px 670px;
+            padding-bottom: 20px;
+        }
+    }
+
+
+.undov{
+  position: relative;
+    .undov-icon{
+        text-align: center;
+        align-items: center;
+    }
+
+    .alan{
+        margin: 100px 0;
+        @include flex(row, space-between, center);
+        p{
+            width: 300px;
+        }
+        .ceo{
+          
+            h1{
+                padding-bottom: 10px;
+                p{
+                   border: 2px solid red;
+                }
+            }
+        }
+    }
+    .kotta{
+        margin:0 490px;
+       
+        img{
+            margin: 0 10px;
+            margin-bottom: 100px;
+        }
+    }
+}
+
+.footer{
+    position: relative;
+    background-image: url(./img/Слой15.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50%;
+    .foot{
+margin: -80px 630px;
+width: 100px;
+height: 100px;
+    }
+}
+
+.bg{
+    position: sticky;
+    background-image: url(./img/bg-footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    .bg-footer{
+        text-align: center;
+        align-items: center;
+        padding-top: 90px;
+        height: 100px;
+    }
+}
